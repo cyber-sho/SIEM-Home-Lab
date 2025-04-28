@@ -66,19 +66,34 @@ Let’s feed it some data!
 If you want to simulate a real environment where another machine (like a client or server) sends logs:
 
 ### 1. Download Splunk Universal Forwarder and Install on Machine
-      - Download Universal Forwarder
+  Download Universal Forwarder
 <br><img src= "https://i.imgur.com/CzbXJP5.png"><br>  
 
 ### 2. Enable Receiving on Splunk Server
-        - Go to Settings → Forwarding and Receiving → Configure Receiving
+  Go to Settings → Forwarding and Receiving → Configure Receiving
 <br><img src= "https://i.imgur.com/3UywL5h.png"><br>
         - Listen on port 9997
 <br><img src= "https://i.imgur.com/6cmENgp.png"><br>   
 <br><img src= "https://i.imgur.com/VLzwUod.png"><br> 
 
-## 📚 Part 6: Build Dashboards and Alerts
+## 📊 Part 6: Install Security Apps on Splunk
+### 1. Install Splunk Security Essentials
+Apps → Find More Apps → Search "Security Essentials" → Install
+
+## 💥 Part 7: Simulate Security Events
+### 1. Generate Events
+
+Manually simulate:
+
+Failed logins
+
+Access forbidden directories
+
+Firewall toggling
+
+## 📚 Part 8: Build Dashboards and Alerts
 ### 1. Create Dashboards
-    -Save search queries as dashboard panels.
+Save search queries as dashboard panels.
 <br><img src= "https://i.imgur.com/yRTiMHb.png"><br>
 
 Deselect _raw and click done
@@ -103,11 +118,5 @@ Edit Dashboard Visualization to fit specific data (Optional)
 <br><img src= "https://i.imgur.com/W9GCxdu.pngg"><br>
 
 <br><img src= "https://i.imgur.com/scErNQo.png"><br>
-Examples:
 
-Track failed login attempts
-
-Monitor antivirus logs
-
-Alert on account lockouts
 
