@@ -1,6 +1,5 @@
 # 🛡️ Build a SIEM Lab with Splunk — Step-by-Step Guide
 
----
 
 ## Description
 This lab provides a hands-on environment to build and operate a Security Information and Event Management (SIEM) system using Splunk Enterprise. It walks through the complete setup — from installing Splunk, ingesting real system and security logs, to installing security apps, creating alerts, and simulating cyber threats.
