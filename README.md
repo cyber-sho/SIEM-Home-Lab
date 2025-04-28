@@ -85,11 +85,11 @@ Apps → Find More Apps → Search "Security Essentials" → Install
 
 Manually simulate:
 
-Failed logins
+  - Failed logins
 
-Access forbidden directories
+  - Access forbidden directories
 
-Firewall toggling
+  - Firewall toggling
 
 ## 📚 Part 8: Build Dashboards and Alerts
 ### 1. Create Dashboards
