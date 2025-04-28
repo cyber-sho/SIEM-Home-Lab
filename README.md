@@ -44,8 +44,7 @@
 ## Part 4: Set Up Basic Data Sources
 Let’s feed it some data!
 
-### 1. Add Local System Logs
-In Splunk Web:
+### 1. Add Local System Logs in Splunk Web:
 - Click Add Data → Monitor
 - Choose Local Event Logs (for Windows)
 - Add System, Security, and Application logs.
@@ -53,20 +52,60 @@ In Splunk Web:
 <br><img src= "https://i.imgur.com/Mrp7vm8.png"><br>
 <br><img src= "https://i.imgur.com/uDPD4l7.png"><br>
 
+- In the search field search by host="machine_name" or *
+<br><img src= "https://i.imgur.com/maAnmOU.png"><br>
+- Manually generate some security events:
+    - Log failed logins
+    - Clear security log
+    - Turn Windows Firewall off/on
+
+     
 ## Part 5: Install Splunk Universal Forwarder (optional but recommended)
 If you want to simulate a real environment where another machine (like a client or server) sends logs:
 
-### 1. Download Splunk Universal Forwarder
+### 1. Download Splunk Universal Forwarder and Install on Machine
       - Download Universal Forwarder
 <br><img src= "https://i.imgur.com/CzbXJP5.png"><br>  
 
-### 2. Install on machine
-      - Configure it to send data to your Splunk server:
-<br><img src= "https://i.imgur.com/CzbXJP5.png"><br>
-### 3. Enable Receiving on Splunk Server
+### 2. Enable Receiving on Splunk Server
         - Go to Settings → Forwarding and Receiving → Configure Receiving
 <br><img src= "https://i.imgur.com/3UywL5h.png"><br>
         - Listen on port 9997
 <br><img src= "https://i.imgur.com/6cmENgp.png"><br>   
 <br><img src= "https://i.imgur.com/VLzwUod.png"><br> 
+
+## 📚 Part 6: Build Dashboards and Alerts
+### 1. Create Dashboards
+    -Save search queries as dashboard panels.
+<br><img src= "https://i.imgur.com/yRTiMHb.png"><br>
+
+Deselect _raw and click done
+
+<br><img src= "https://i.imgur.com/gRC2cN8.png"><br>
+
+Navigate to Dashboards- Create New Dashboard- Table
+
+<br><img src= "https://i.imgur.com/YJUo166.png"><br>
+
+<br><img src= "https://i.imgur.com/4DhI8gL.png"><br>
+
+<br><img src= "https://i.imgur.com/bpkFNqh.png"><br>
+
+Paste SPL query
+<br><img src= "https://i.imgur.com/2Xe7Htm.png"><br>
+
+Edit Dashboard Visualization to fit specific data (Optional)
+
+<br><img src= "https://i.imgur.com/WJPFMPK.png"><br>
+
+<br><img src= "https://i.imgur.com/W9GCxdu.pngg"><br>
+
+<br><img src= "https://i.imgur.com/scErNQo.png"><br>
+Examples:
+
+Track failed login attempts
+
+Monitor antivirus logs
+
+Alert on account lockouts
 
